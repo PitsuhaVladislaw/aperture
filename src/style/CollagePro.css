@@ -1,1 +1,117 @@
-/*# sourceMappingURL=CollagePro.css.map */
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/font/Poppins/Poppins-Medium.ttf);
+}
+.collagePro .collageBlock .collageGrid article .textSet button h5, .collagePro .collageBlock .collageGrid article .textSet p, .collagePro .collageBlock .collageGrid article .textSet h2, .collagePro .collageBlock .headCollage h4, .collagePro .collageBlock .headCollage h2 {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #C0C0C0;
+  margin: 0;
+}
+
+.collagePro {
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+.collagePro .collageBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  gap: 42px;
+}
+.collagePro .collageBlock .headCollage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+.collagePro .collageBlock .headCollage h2 {
+  font-size: 40px;
+  line-height: 42px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.collagePro .collageBlock .headCollage h4 {
+  font-size: 23px;
+  line-height: 30px;
+  text-align: center;
+}
+.collagePro .collageBlock .collageGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+.collagePro .collageBlock .collageGrid article {
+  position: relative;
+  background-size: cover;
+  height: 600px;
+  width: 576px;
+}
+.collagePro .collageBlock .collageGrid article .textSet {
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  width: auto;
+  bottom: 30px;
+  left: 30px;
+  gap: 20px;
+}
+.collagePro .collageBlock .collageGrid article .textSet h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+}
+.collagePro .collageBlock .collageGrid article .textSet p {
+  width: 480px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.collagePro .collageBlock .collageGrid article .textSet button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px 10px 5px 4px;
+  background-color: #FFFFFF;
+  border-radius: 14px;
+  width: 143px;
+  height: 42px;
+  border: 14px;
+  gap: 6px;
+}
+.collagePro .collageBlock .collageGrid article .textSet button div {
+  width: 32px;
+  height: 32px;
+  border-radius: 12.58px;
+  background-color: #000000;
+}
+.collagePro .collageBlock .collageGrid article .textSet button h5 {
+  letter-spacing: 0.4px;
+  line-height: 20px;
+  font-size: 15px;
+  color: #000000;
+}
+.collagePro .collageBlock .collageGrid .imgCol1 {
+  background-image: url(../assets/img/imgCollage1.jpg);
+}
+.collagePro .collageBlock .collageGrid .imgCol2 {
+  background-image: url(../assets/img/imgCollage2.jpg);
+}
+.collagePro .collageBlock .collageGrid .imgCol3 {
+  background-image: url(../assets/img/imgCollage3.jpg);
+}
+.collagePro .collageBlock .collageGrid .imgCol4 {
+  background-image: url(../assets/img/imgCollage4.jpg);
+}/*# sourceMappingURL=CollagePro.css.map */
