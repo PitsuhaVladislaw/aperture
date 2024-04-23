@@ -10,3 +10,71 @@
     margin: 0;
 }
 
+.navMenu {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #181818;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    height: 90px;
+    width: auto;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 31px;
+            width: 128px;
+        }
+    }
+
+    .menuLink {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 31px;
+
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1px;
+            height: auto;
+            width: auto;
+
+            h3 {
+                @extend %set-main-text;
+                font-size: 13px;
+                line-height: 20px;
+            }
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFFFFF;
+            padding: 9px 20px 13px;
+            border-radius: 14px;
+            border: none;
+
+            h4 {
+                @extend %set-main-text;
+                letter-spacing: 0.4px;
+                font-size: 16px;
+                height: 20px;
+                width: 115px;
+                line-height: 20px;
+                color: #000000;
+            }
+        }
+    }
+}
