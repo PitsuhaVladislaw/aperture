@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../assets/font/Poppins/Poppins-Medium.ttf);
+}
+
+%set-main-text {
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.eventCou {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 600px;
+    width: auto;
+    background-size: cover;
+
+    .imgHead {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 87px;
+
+        h2 {
+            text-transform: uppercase;
+            @extend %set-main-text;
+            letter-spacing: 2px;
+            line-height: 20px;
+            font-size: 14px;
+        }
+
+        p {
+            @extend %set-main-text;
+            line-height: 20px;
+            font-size: 14px;
+            height: auto;
+            width: 273px;
+        }
+    }
+}

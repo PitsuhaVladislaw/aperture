@@ -20,7 +20,7 @@
     position: relative;
     align-items: flex-end;
 
-    section {
+    .headText {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -50,47 +50,6 @@
             font-size: 14px;
             margin-top: 16px;
             text-align: center;
-        }
-    }
-
-    article {
-        position: absolute;
-        bottom: 0;
-        right: 40px;
-        justify-content: flex-end;
-        align-items: center;
-        display: flex;
-        height: 16px;
-        width: auto;
-        gap: 16px;
-
-        div {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
-            height: auto;
-            width: auto;
-            gap: 6px;
-
-            svg {
-                height: auto;
-                width: auto;
-                color: #FFFFFF;
-            }
-
-            img {
-                height: auto;
-                width: auto;
-                color: #FFFFFF;
-            }
-
-            h4 {
-                @extend %set-main-text;
-                line-height: 12px;
-                font-size: 12px;
-                color: #FFFFFF;
-            }
         }
     }
 }

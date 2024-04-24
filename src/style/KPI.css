@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/font/Poppins/Poppins-Medium.ttf);
+}
+.kpi div h4 {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #C0C0C0;
+  margin: 0;
+}
+
+.kpi {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  height: 16px;
+  width: auto;
+  gap: 16px;
+}
+.kpi div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+  width: auto;
+  gap: 6px;
+}
+.kpi div svg {
+  height: auto;
+  width: auto;
+  color: #FFFFFF;
+}
+.kpi div img {
+  height: auto;
+  width: auto;
+  color: #FFFFFF;
+}
+.kpi div h4 {
+  line-height: 12px;
+  font-size: 12px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=KPI.css.map */
