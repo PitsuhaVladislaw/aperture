@@ -5,6 +5,8 @@ import '../style/EventCountry.css'
 import imgGround1 from '../assets/img/imgGround1.jpg';
 import imgGround2 from '../assets/img/imgGround2.jpg';
 import imgGround3 from '../assets/img/imgGround3.jpg';
+import Equipment from "../components/Equipment";
+import Clients from "../components/Clients";
 
 function MainPage() {
     return(
@@ -19,6 +21,7 @@ function MainPage() {
                 text3="400"
                 text4="Japan"
             />
+            <Equipment />
             <EventCountry 
                 imgGround={imgGround2}
                 name="Monstera Leafs"
@@ -28,8 +31,8 @@ function MainPage() {
                 text3="100"
                 text4="Costa Rica"
             />
+            <Clients />
             <EventCountry
-
                 imgGround={imgGround3}
                 name="Star fall in the Himalayas"
                 desc="Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula."

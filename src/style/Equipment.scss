@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../assets/font/Poppins/Poppins-Medium.ttf);
+}
+
+%set-main-text {
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.equipment {
+    display: flex;
+    width: auto;
+    height: 540px;
+    position: relative;
+    background-color: #000000;
+    justify-content: space-between;
+
+    .equText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .blockText {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 60px 40px 40px;
+            margin-left: 60px;
+            gap: 6px;
+
+            h4 {
+                @extend %set-main-text;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                line-height: 20px;
+                font-size: 14px;
+                color: #C0C0C0;
+            }
+
+            h1 {
+                @extend %set-main-text;
+                line-height: 32px;
+                font-size: 28px;
+            }
+
+            p {
+                @extend %set-main-text;
+                line-height: 20px;
+                font-size: 14px;
+                margin-top: 8px;
+                width: 514px;
+            }
+
+            button {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 5px 10px 5px 4px;
+                align-items: center;
+                background-color: #FFFFFF;
+                border-radius: 14px;
+                margin-top: 14px;
+                border: none;
+                height: auto;
+                width: auto;
+                gap: 6px;
+
+                div {
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 14px;
+                    background-color: #000000;
+                }
+
+                h3 {
+                    @extend %set-main-text;
+                    letter-spacing: 0.4px;
+                    line-height: 20px;
+                    font-size: 20px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    .equImg {
+        width: 720px;
+        height: 540px;
+        background-size: cover;
+        background-image: url(../assets/img/equImg.jpg);
+    }
+}
