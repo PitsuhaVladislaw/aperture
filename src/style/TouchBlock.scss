@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../assets/font/Poppins/Poppins-Medium.ttf);
+}
+
+%set-main-text {
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.touchBlock {
+    display: flex;
+    justify-content: center;
+    padding: 120px auto 108px;
+    align-items: center;
+    height: 414px;
+    width: auto;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+
+        h1 {
+            @extend %set-main-text;
+            margin-bottom: 3px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 40px;
+            width: 571px;
+        }
+
+        h3 {
+            @extend %set-main-text;
+            text-align: center;
+            line-height: 30px;
+            font-size: 24px;
+        }
+
+        button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 5px 10px 5px 4px;
+            align-items: center;
+            background-color: #FFFFFF;
+            border-radius: 14px;
+            margin-top: 10px;
+            border: none;
+            height: auto;
+            width: auto;
+            gap: 6px;
+        
+            div {
+                height: 32px;
+                width: 32px;
+                border-radius: 14px;
+                background-color: #000000;
+            }
+        
+            h5 {
+                @extend %set-main-text;
+                letter-spacing: 0.4px;
+                line-height: 20px;
+                font-size: 20px;
+                color: #000000;
+            }
+        }
+    }
+}

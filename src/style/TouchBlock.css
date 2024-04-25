@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/font/Poppins/Poppins-Medium.ttf);
+}
+.touchBlock article button h5, .touchBlock article h3, .touchBlock article h1 {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.touchBlock {
+  display: flex;
+  justify-content: center;
+  padding: 120px auto 108px;
+  align-items: center;
+  height: 414px;
+  width: auto;
+}
+.touchBlock article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+.touchBlock article h1 {
+  margin-bottom: 3px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 40px;
+  width: 571px;
+}
+.touchBlock article h3 {
+  text-align: center;
+  line-height: 30px;
+  font-size: 24px;
+}
+.touchBlock article button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px 10px 5px 4px;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 14px;
+  margin-top: 10px;
+  border: none;
+  height: auto;
+  width: auto;
+  gap: 6px;
+}
+.touchBlock article button div {
+  height: 32px;
+  width: 32px;
+  border-radius: 14px;
+  background-color: #000000;
+}
+.touchBlock article button h5 {
+  letter-spacing: 0.4px;
+  line-height: 20px;
+  font-size: 20px;
+  color: #000000;
+}/*# sourceMappingURL=TouchBlock.css.map */

@@ -7,6 +7,7 @@ import imgGround2 from '../assets/img/imgGround2.jpg';
 import imgGround3 from '../assets/img/imgGround3.jpg';
 import Equipment from "../components/Equipment";
 import Clients from "../components/Clients";
+import TouchBlock from "../components/TouchBlock";
 
 function MainPage() {
     return(
@@ -41,6 +42,7 @@ function MainPage() {
                 text3="800"
                 text4="Nepal"
             />
+            <TouchBlock />
         </main>
     )
 }
