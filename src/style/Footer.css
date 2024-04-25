@@ -1,4 +1,160 @@
 @font-face {
   font-family: "Poppins";
   src: url(../assets/font/Poppins/Poppins-Medium.ttf);
+}
+.footer .centBlockFo .textArea .textBlockBut textarea, .footer .centBlockFo .textArea article h5, .footer .centBlockFo .textArea article h4, .footer .centBlockFo section .tablePages article h2, .footer .centBlockFo section .tablePages article h1, .footer .centBlockFo section .logoPages h3, .footer .centBlockFo section h6 {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+.footer .centBlockFo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: auto;
+  width: 1168px;
+  gap: 36px;
+}
+.footer .centBlockFo .line {
+  height: 2px;
+  width: auto;
+  background-color: #FFFFFF;
+}
+.footer .centBlockFo section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 252px;
+}
+.footer .centBlockFo section h6 {
+  line-height: 20px;
+  font-size: 14px;
+  color: #C0C0C0;
+}
+.footer .centBlockFo section .logoPages {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+  width: auto;
+  gap: 20px;
+}
+.footer .centBlockFo section .logoPages img {
+  width: 128px;
+  height: 31px;
+}
+.footer .centBlockFo section .logoPages h3 {
+  line-height: 2px;
+  font-size: 13px;
+  color: #C0C0C0;
+}
+.footer .centBlockFo section .tablePages {
+  display: flex;
+  height: auto;
+  width: auto;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+.footer .centBlockFo section .tablePages article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 200px;
+  gap: 10px;
+}
+.footer .centBlockFo section .tablePages article h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #C0C0C0;
+}
+.footer .centBlockFo section .tablePages article h2 {
+  line-height: 20px;
+  font-size: 14px;
+}
+.footer .centBlockFo section .blockLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: auto;
+  gap: 20px;
+}
+.footer .centBlockFo section .blockLinks svg {
+  width: 20px;
+  height: 20px;
+  color: #C0C0C0;
+}
+.footer .centBlockFo .linkSect {
+  margin-top: 20px;
+}
+.footer .centBlockFo .textArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+.footer .centBlockFo .textArea article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer .centBlockFo .textArea article h4 {
+  letter-spacing: 2px;
+  line-height: 20px;
+  font-size: 14px;
+}
+.footer .centBlockFo .textArea article h5 {
+  line-height: 20px;
+  font-size: 13px;
+  color: #C0C0C0;
+}
+.footer .centBlockFo .textArea .textBlockBut {
+  display: flex;
+  justify-content: center;
+  background-color: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  padding: 6px 7px 6px 6px;
+  align-items: center;
+  border-radius: 12px;
+  height: auto;
+  width: auto;
+  gap: 6px;
+}
+.footer .centBlockFo .textArea .textBlockBut textarea {
+  width: 376px;
+  height: 30px;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  font-size: 14px;
+  border: none;
+  color: #000000;
+  overflow: hidden;
+  resize: none;
+}
+.footer .centBlockFo .textArea .textBlockBut button {
+  width: 63px;
+  height: 30px;
+  border: none;
+  border-radius: 11px;
+  background-color: #000000;
 }/*# sourceMappingURL=Footer.css.map */

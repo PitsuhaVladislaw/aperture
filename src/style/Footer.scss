@@ -6,10 +6,184 @@
 %set-main-text {
     font-family: 'Poppins';
     font-weight: 400;
-    color: #C0C0C0;
+    color: #FFFFFF;
     margin: 0;
 }
 
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
 
+    .centBlockFo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        height: auto;
+        width: 1168px;
+        gap: 36px;
+
+        .line {
+            height: 2px;
+            width: auto;
+            background-color: #FFFFFF;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 252px;
+
+            h6 {
+                @extend %set-main-text;
+                line-height: 20px;
+                font-size: 14px;
+                color: #C0C0C0;
+            }
+
+            .logoPages {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                height: auto;
+                width: auto;
+                gap: 20px;
+
+                img {
+                    width: 128px;
+                    height: 31px;
+                }
+
+                h3 {
+                    @extend %set-main-text;
+                    line-height: 2px;
+                    font-size: 13px;
+                    color: #C0C0C0;
+                }
+            }
+
+            .tablePages {
+                display: flex;
+                height: auto;
+                width: auto;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 16px;
+
+                article {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    width: 200px;
+                    gap: 10px;
+
+                    h1 {
+                        @extend %set-main-text;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        line-height: 20px;
+                        font-size: 14px;
+                        color: #C0C0C0
+                    }
+
+                    h2 {
+                        @extend %set-main-text;
+                        line-height: 20px;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .blockLinks {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: auto;
+                width: auto;
+                gap: 20px;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    color: #C0C0C0;
+                }
+            }
+        }
+
+        .linkSect {
+            margin-top: 20px;
+        }
+
+        .textArea {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: auto;
+            width: auto;
+
+            article {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 20px;
+
+                h4 {
+                    @extend %set-main-text;
+                    letter-spacing: 2px;
+                    line-height: 20px;
+                    font-size: 14px;
+                }
+
+                h5 {
+                    @extend %set-main-text;
+                    line-height: 20px;
+                    font-size: 13px;
+                    color: #C0C0C0;
+                }
+            }
+
+            .textBlockBut {
+                display: flex;
+                justify-content: center;
+                background-color: #F9FAFB;
+                border: 1px solid #E5E7EB;
+                padding: 6px 7px 6px 6px;
+                align-items: center;
+                border-radius: 12px;
+                height: auto;
+                width: auto;
+                gap: 6px;
+
+                textarea {
+                    width: 376px;
+                    height: 30px;
+                    border-radius: 8px;
+                    @extend %set-main-text;
+                    letter-spacing: 2px;
+                    line-height: 20px;
+                    font-size: 14px;
+                    border: none;
+                    color: #000000;
+                    overflow: hidden;
+                    resize: none;
+                }
+
+                button {
+                    width: 63px;
+                    height: 30px;
+                    border: none;
+                    border-radius: 11px;
+                    background-color: #000000;
+                }
+            }
+        }
+    }
 }
