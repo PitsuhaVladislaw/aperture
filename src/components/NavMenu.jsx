@@ -3,10 +3,14 @@ import '../style/NavMenu.css'
 import Logo from '../assets/img/Combined-Shape.png'
 
 function NavMenu() {
+    const refreshPage = () => {
+        window.location.reload();
+    }
+
     return(
         <nav className='navMenu'>
             <article className='logo'>
-                <img src={Logo} alt="logp" />
+                <img onClick={refreshPage} src={Logo} alt="logp" />
             </article>
             <article className='menuLink'>
                 <div style={{marginRight: '24px'}}>

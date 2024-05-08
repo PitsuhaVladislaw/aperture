@@ -27,6 +27,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 
         img {
             height: 31px;
@@ -39,7 +40,7 @@
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        gap: 31px;
+        gap: 27px;
 
 
         div {
@@ -54,6 +55,15 @@
                 @extend %set-main-text;
                 font-size: 13px;
                 line-height: 20px;
+                padding: 2px;
+                cursor: pointer;
+            }
+
+            h3:hover {
+                font-weight: 500;
+                background-color: #FFFFFF;
+                border-radius: 10px;
+                color: #000000;
             }
         }
 
@@ -62,8 +72,9 @@
             justify-content: center;
             align-items: center;
             background-color: #FFFFFF;
-            padding: 9px 20px 13px;
+            padding: 9px 20px;
             border-radius: 14px;
+            cursor: pointer;
             border: none;
 
             h4 {
@@ -74,6 +85,34 @@
                 width: 115px;
                 line-height: 20px;
                 color: #000000;
+            }
+        }
+
+        button:hover {
+            outline: 2px solid #FFFFFF;
+            background-color: #000000;
+            animation: ColorChange 2s infinite;
+
+            h4 {
+                color: #FFFFFF;
+            }
+        }
+
+        @keyframes ColorChange {
+            0% {
+                outline-color: #FFFFFF;
+            }
+            25% {
+                outline-color: #6a6868;
+            }
+            50% {
+                outline-color: #000000;
+            }
+            75% {
+                outline-color: #6a6868;
+            }
+            100% {
+                outline-color: #FFFFFF;
             }
         }
     }

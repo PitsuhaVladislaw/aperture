@@ -26,6 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .navMenu .logo img {
   height: 31px;
@@ -36,7 +37,7 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 31px;
+  gap: 27px;
 }
 .navMenu .menuLink div {
   display: flex;
@@ -49,14 +50,23 @@
 .navMenu .menuLink div h3 {
   font-size: 13px;
   line-height: 20px;
+  padding: 2px;
+  cursor: pointer;
+}
+.navMenu .menuLink div h3:hover {
+  font-weight: 500;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  color: #000000;
 }
 .navMenu .menuLink button {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #FFFFFF;
-  padding: 9px 20px 13px;
+  padding: 9px 20px;
   border-radius: 14px;
+  cursor: pointer;
   border: none;
 }
 .navMenu .menuLink button h4 {
@@ -66,4 +76,29 @@
   width: 115px;
   line-height: 20px;
   color: #000000;
+}
+.navMenu .menuLink button:hover {
+  outline: 2px solid #FFFFFF;
+  background-color: #000000;
+  animation: ColorChange 2s infinite;
+}
+.navMenu .menuLink button:hover h4 {
+  color: #FFFFFF;
+}
+@keyframes ColorChange {
+  0% {
+    outline-color: #FFFFFF;
+  }
+  25% {
+    outline-color: #6a6868;
+  }
+  50% {
+    outline-color: #000000;
+  }
+  75% {
+    outline-color: #6a6868;
+  }
+  100% {
+    outline-color: #FFFFFF;
+  }
 }/*# sourceMappingURL=NavMenu.css.map */

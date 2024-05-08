@@ -57,6 +57,7 @@
   background-color: #FFFFFF;
   border-radius: 14px;
   margin-top: 14px;
+  cursor: pointer;
   border: none;
   height: auto;
   width: auto;
@@ -73,6 +74,35 @@
   line-height: 20px;
   font-size: 20px;
   color: #000000;
+}
+.equipment .equText .blockText button:hover {
+  outline: 2px solid #FFFFFF;
+  flex-direction: row-reverse;
+  background-color: #000000;
+  animation: ColorChange 2s infinite;
+}
+.equipment .equText .blockText button:hover div {
+  background-color: #FFFFFF;
+}
+.equipment .equText .blockText button:hover h3 {
+  color: #FFFFFF;
+}
+@keyframes ColorChange {
+  0% {
+    outline-color: #FFFFFF;
+  }
+  25% {
+    outline-color: #6a6868;
+  }
+  50% {
+    outline-color: #000000;
+  }
+  75% {
+    outline-color: #6a6868;
+  }
+  100% {
+    outline-color: #FFFFFF;
+  }
 }
 .equipment .equImg {
   width: 720px;

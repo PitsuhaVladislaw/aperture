@@ -2,7 +2,7 @@
   font-family: "Poppins";
   src: url(../assets/font/Poppins/Poppins-Medium.ttf);
 }
-.footer .centBlockFo .textArea .textBlockBut textarea, .footer .centBlockFo .textArea article h5, .footer .centBlockFo .textArea article h4, .footer .centBlockFo section .tablePages article h2, .footer .centBlockFo section .tablePages article h1, .footer .centBlockFo section .logoPages h3, .footer .centBlockFo section h6 {
+.footer .centBlockFo .textArea .textBlockBut input, .footer .centBlockFo .textArea article h5, .footer .centBlockFo .textArea article h4, .footer .centBlockFo section .tablePages article h2, .footer .centBlockFo section .tablePages article h1, .footer .centBlockFo section .logoPages h3, .footer .centBlockFo section h6 {
   font-family: "Poppins";
   font-weight: 400;
   color: #FFFFFF;
@@ -53,6 +53,7 @@
 .footer .centBlockFo section .logoPages img {
   width: 128px;
   height: 31px;
+  cursor: pointer;
 }
 .footer .centBlockFo section .logoPages h3 {
   line-height: 2px;
@@ -84,8 +85,15 @@
   color: #C0C0C0;
 }
 .footer .centBlockFo section .tablePages article h2 {
+  cursor: pointer;
   line-height: 20px;
   font-size: 14px;
+}
+.footer .centBlockFo section .tablePages article h2:hover {
+  text-decoration: underline;
+  text-decoration-color: #C0C0C0;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 .footer .centBlockFo section .blockLinks {
   display: flex;
@@ -93,12 +101,18 @@
   align-items: center;
   height: auto;
   width: auto;
-  gap: 20px;
+  gap: 16px;
 }
 .footer .centBlockFo section .blockLinks svg {
   width: 20px;
   height: 20px;
   color: #C0C0C0;
+  cursor: pointer;
+  padding: 2px;
+}
+.footer .centBlockFo section .blockLinks svg:hover {
+  outline: 2px solid #C0C0C0;
+  border-radius: 50%;
 }
 .footer .centBlockFo .linkSect {
   margin-top: 20px;
@@ -139,7 +153,7 @@
   width: auto;
   gap: 6px;
 }
-.footer .centBlockFo .textArea .textBlockBut textarea {
+.footer .centBlockFo .textArea .textBlockBut input {
   width: 376px;
   height: 30px;
   border-radius: 8px;
@@ -157,4 +171,12 @@
   border: none;
   border-radius: 11px;
   background-color: #000000;
+  cursor: pointer;
+}
+.footer .centBlockFo .textArea .textBlockBut button:hover {
+  outline: 3px solid #000000;
+  background-color: #FFFFFF;
+}
+.footer .centBlockFo .textArea .textBlockBut:hover {
+  flex-direction: row-reverse;
 }/*# sourceMappingURL=Footer.css.map */

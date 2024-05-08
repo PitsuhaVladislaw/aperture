@@ -7,12 +7,16 @@ import { FaFacebookF } from "react-icons/fa";
 import Logo from '../assets/img/Combined-Shape.png'
 
 function Footer() {
+    const refreshPage = () => {
+        window.location.reload();
+    }
+
     return(
         <footer className='footer'>
             <div className='centBlockFo'>
                 <section>
                     <div className='logoPages'>
-                        <img src={Logo} alt="Logo" />
+                        <img onClick={refreshPage} src={Logo} alt="Logo" />
                         <h3>Photographers & videographers capturing the world around us.</h3>
                     </div>
                     <div className='tablePages'>
@@ -41,7 +45,7 @@ function Footer() {
                         <h5>Read about all the things we do.</h5>
                     </article>
                     <div className='textBlockBut'>
-                        <textarea name="link" id="link" cols="" rows=""></textarea>
+                        <input type="text" name="textPost" id="textPost" />
                         <button></button>
                     </div>
                 </section>

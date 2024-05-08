@@ -93,9 +93,11 @@
                         display: flex;
                         flex-direction: row;
                         justify-content: center;
+                        align-items: center;
                         padding: 5px 10px 5px 4px;
                         background-color: #FFFFFF;
                         border-radius: 14px;
+                        cursor: pointer;
                         width: 143px;
                         height: 42px;
                         border: 14px;
@@ -116,6 +118,71 @@
                             color: #000000;
                         }
                     }
+                }
+            }
+
+            article:hover {
+                border-radius: 10px;
+                outline: 2px solid #FFFFFF;
+                background-position-x: center;
+                background-position-y: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                animation: ColorChange 2s infinite,
+                    changeBackground 5s infinite;
+
+                button {
+                    outline: 2px solid #FFFFFF;
+                    background-color: #000000;
+                    flex-direction: row-reverse;
+                    animation: ColorChange 2s infinite;
+            
+                    div {
+                        background-color: #FFFFFF;
+                    }
+            
+                    h5 {
+                        color: #FFFFFF;
+                    }
+                }
+                
+                @keyframes ColorChange {
+                    0% {
+                        outline-color: #FFFFFF;
+                    }
+            
+                    25% {
+                        outline-color: #6a6868;
+                    }
+            
+                    50% {
+                        outline-color: #000000;
+                    }
+            
+                    75% {
+                        outline-color: #6a6868;
+                    }
+            
+                    100% {
+                        outline-color: #FFFFFF;
+                    }
+                }
+            }
+
+            @keyframes changeBackground {
+                0% {
+                    background-position: center center;
+                    background-size: contain;
+                }
+
+                50% {
+                    background-position: left top;
+                    background-size: cover;
+                }
+
+                100% {
+                    background-position: right bottom;
+                    background-size: auto;
                 }
             }
 
